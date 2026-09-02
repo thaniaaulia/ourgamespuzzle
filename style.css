@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+*{box-sizing:border-box}
+body{margin:0;font-family:"DM Sans",sans-serif;background:#f6f7fb;color:#171821;min-height:100vh}
+.hero{padding:72px 20px 42px;text-align:center;background:linear-gradient(135deg,#171821,#30334a);color:white}
+.badge{display:inline-block;padding:8px 14px;border:1px solid #ffffff30;border-radius:999px;font-size:12px;letter-spacing:2px;background:#ffffff10}
+h1{font:700 clamp(42px,8vw,76px)/.95 "Space Grotesk",sans-serif;margin:20px 0 16px}
+h1 span{color:#b9f27c}
+.hero p{max-width:650px;margin:auto;color:#c9cad4;font-size:17px}
+.container{max-width:1100px;margin:auto;padding:28px 20px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.stats div{background:white;border:1px solid #e8e9ef;border-radius:18px;padding:18px;text-align:center;box-shadow:0 8px 30px #1b1d2a08}
+.stats b{display:block;font:700 30px "Space Grotesk"}
+.stats small{color:#777b89}
+.games-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.game-card{border:0;text-align:left;background:white;border-radius:24px;padding:28px;cursor:pointer;box-shadow:0 10px 35px #1b1d2a0b;transition:.2s;border:1px solid #e8e9ef}
+.game-card:hover{transform:translateY(-5px);box-shadow:0 18px 45px #1b1d2a18}
+.icon{font-size:44px}.game-card h2{font:700 25px "Space Grotesk";margin:15px 0 8px}.game-card p{color:#707483;margin:0 0 24px}.play{font-weight:700;font-size:13px;letter-spacing:1px}
+.tip{margin-top:22px;padding:18px;border-radius:16px;background:#eaf8dc;color:#42522f}
+footer{text-align:center;padding:35px;color:#8a8d98;font-size:13px}
+.modal{position:fixed;inset:0;background:#11131bcc;display:grid;place-items:center;padding:18px;z-index:5}
+.hidden{display:none}.modal-box{width:min(700px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:26px;padding:28px;position:relative}
+.close{position:absolute;right:15px;top:12px;border:0;background:#f0f1f5;border-radius:50%;width:36px;height:36px;font-size:25px;cursor:pointer}
+.game-title{font:700 32px "Space Grotesk";margin:5px 0}.game-info{text-align:center;color:#727684}
+.game-area{display:flex;flex-direction:column;align-items:center;gap:18px;margin-top:22px}
+button.action{border:0;background:#171821;color:#fff;border-radius:12px;padding:11px 18px;font-weight:700;cursor:pointer}
+button.action:hover{opacity:.9}
+.memory-grid{display:grid;grid-template-columns:repeat(4,70px);gap:10px}
+.card{width:70px;height:70px;border:0;border-radius:14px;background:#30334a;color:transparent;font-size:32px;cursor:pointer}
+.card.flipped,.card.matched{background:#b9f27c;color:#171821}
+.word{font:700 38px "Space Grotesk";letter-spacing:8px}
+input{padding:12px 14px;border:1px solid #dfe1e8;border-radius:12px;font:inherit;width:min(280px,100%);outline:none}
+.number-grid{display:grid;grid-template-columns:repeat(4,65px);gap:8px}
+.num{height:65px;border:0;border-radius:12px;background:#f0f1f5;font-size:20px;font-weight:700;cursor:pointer}
+.num:hover{background:#e1e3ea}.target{font-size:18px}
+.lights-grid{display:grid;grid-template-columns:repeat(5,50px);gap:7px}
+.light{width:50px;height:50px;border:0;border-radius:10px;background:#25283a;cursor:pointer}
+.light.on{background:#ffd95a}
+.win{font-weight:700;font-size:20px}
+@media(max-width:650px){.games-grid{grid-template-columns:1fr}.stats b{font-size:24px}.memory-grid{grid-template-columns:repeat(4,58px)}.card{width:58px;height:58px}.lights-grid{grid-template-columns:repeat(5,42px)}.light{width:42px;height:42px}}

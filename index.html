@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PuzzleVerse — Puzzle Game Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="badge">🧩 PUZZLEVERSE</div>
+    <h1>Think. Play. <span>Master.</span></h1>
+    <p>Kumpulan mini puzzle yang ringan, seru, dan bisa dimainkan langsung di browser.</p>
+  </header>
+
+  <main class="container">
+    <section class="stats">
+      <div><b id="score">0</b><small>Score</small></div>
+      <div><b id="games">0</b><small>Games Played</small></div>
+      <div><b id="best">0</b><small>Best Score</small></div>
+    </section>
+
+    <section class="games-grid">
+      <button class="game-card" data-game="memory">
+        <span class="icon">🧠</span>
+        <h2>Memory Match</h2>
+        <p>Temukan semua pasangan kartu.</p>
+        <span class="play">PLAY →</span>
+      </button>
+
+      <button class="game-card" data-game="number">
+        <span class="icon">🔢</span>
+        <h2>Number Merge</h2>
+        <p>Gabungkan angka untuk mencapai target.</p>
+        <span class="play">PLAY →</span>
+      </button>
+
+      <button class="game-card" data-game="word">
+        <span class="icon">🔤</span>
+        <h2>Word Scramble</h2>
+        <p>Susun huruf acak menjadi kata.</p>
+        <span class="play">PLAY →</span>
+      </button>
+
+      <button class="game-card" data-game="lights">
+        <span class="icon">💡</span>
+        <h2>Lights Out</h2>
+        <p>Matikan semua lampu dengan langkah sesedikit mungkin.</p>
+        <span class="play">PLAY →</span>
+      </button>
+    </section>
+
+    <section class="tip">💡 <b>Tip:</b> Semua progress tersimpan otomatis di browser kamu.</section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button id="close" class="close">×</button>
+      <div id="game"></div>
+    </div>
+  </div>
+
+  <footer>Made with HTML • CSS • JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>
